@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Livewire\Post;
+use App\Http\Livewire\Students;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/post', Post::class);
+Route::get('/student', Students::class);
