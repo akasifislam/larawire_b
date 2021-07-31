@@ -8,9 +8,7 @@
                     <div class="card-header">
                         <h3>
                             All students
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Add New Student
-                            </button>
+                            <a class="btn btn-sm btn-primary" href="{{ route('app.student.create') }}">student create</a>
                         </h3>
                         
                     </div>

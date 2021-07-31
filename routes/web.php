@@ -27,3 +27,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/post', Post::class);
 Route::get('/student', Students::class);
+
+Route::view('/student-add', 'livewire.student.create')->name('app.student.create');
